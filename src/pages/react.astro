@@ -1,0 +1,22 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ReactComp from '../components/ReactComp'
+const homeTitle = 'Astro with React'
+const subtitle = 'Yay! This reacts!'
+---
+
+<MainLayout title={homeTitle}>
+	<h3>{subtitle}</h3>
+    <ReactComp client:only="react" />
+</MainLayout>
+
+<style>
+    .dialog{
+        background-color: greenyellow;
+        width: 400px;
+        margin: 0px auto;
+        height: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
