@@ -1,0 +1,8 @@
+.dialog{
+    background-color: greenyellow;
+    width: 400px;
+    margin: 0px auto;
+    height: 120px;
+    text-align: center;
+    padding: 20px;
+}
